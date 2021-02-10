@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<body>
+    <script src="//d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+    <!-- <div id="graph" style="text-align: center;"></div> -->
+    <div id="graph"></div>
+    <script>
+        var dotSrc = `
+            digraph dd {
+                {
+                    rankdir=UD
+                    // rankdir=LR
+                    graph [label="Click on a node or an edge to delete it" labelloc="t", fontsize="20.0" tooltip=" "]
+                    node [shape="plaintext", fontsize=20, fillColor="gray"]
+                    1957 [id="1957" label="1957"]
+                    1958 [id="1958" label="1958"]
+                    1959 [id="1959" label="1959"]
+                    1960 [id="1960" label="1960"]
+                    1961 [id="1961" label="1961"]
+                    1962 [id="1962" label="1962"]
+                    1963 [id="1963" label="1963"]
+                    1964 [id="1964" label="1964"]
+                    1966 [id="1966" label="1966"]
+                    1967 [id="1967" label="1967"]
+                    1968 [id="1968" label="1968"]
+                    1969 [id="1969" label="1969"]
+                    1970 [id="1970" label="1970"]
+                    1971 [id="1971" label="1971"]
+                    1972 [id="1972" label="1972"]
+                    1974 [id="1974" label="1974"]
+                    1975 [id="1975" label="1975"]
+                    1976 [id="1976" label="1976"]
+                    1977 [id="1977" label="1977"]
+                    1978 [id="1978" label="1978"]
+                    1979 [id="1979" label="1979"]
+                    1980 [id="1980" label="1980"]
+                    1981 [id="1981" label="1981"]
+                    1982 [id="1982" label="1982"]
+                    1983 [id="1983" label="1983"]
+                    1984 [id="1984" label="1984"]
+                    1985 [id="1985" label="1985"]
+                    1986 [id="1986" label="1986"]
+                    1987 [id="1987" label="1987"]
+                    1988 [id="1988" label="1988"]
+                    1989 [id="1989" label="1989"]
+                    1990 [id="1990" label="1990"]
+                    1991 [id="1991" label="1991"]
+                    1992 [id="1992" label="1992"]
+                    1993 [id="1993" label="1993"]
+                    1994 [id="1994" label="1994"]
+                    1995 [id="1995" label="1995"]
+                    1996 [id="1996" label="1996"]
+                    1997 [id="1997" label="1997"]
+                    1998 [id="1998" label="1998"]
+                    1999 [id="1999" label="1999"]
+                    2000 [id="2000" label="2000"]
+                    2001 [id="2001" label="2001"]
+                    2002 [id="2002" label="2002"]
+                    2003 [id="2003" label="2003"]
+                    2004 [id="2004" label="2004"]
+                    2005 [id="2005" label="2005"]
+                    2006 [id="2006" label="2006"]
+                    2007 [id="2007" label="2007"]
+                    2008 [id="2008" label="2008"]
+                    2009 [id="2009" label="2009"]
+                    2010 [id="2010" label="2010"]
+                    2011 [id="2011" label="2011"]
+                    2012 [id="2012" label="2012"]
+                    2014 [id="2014" label="2014"]
+                    2015 [id="2015" label="2015"]
+                    2016 [id="2016" label="2016"]
+                    2017 [id="2017" label="2017"]
+                }
+
+                // each of these node lists are on their respective date lines
+                rankdir=UD
+                //rankdir=LR
+                node[fontsize=15, style=filled fillColor="lightBlue"]
+                subgraph cluster0 { rank=same; 1957; "Flow-matic"; "Fortran I" }
+                subgraph cluster1 { rank=same; 1958; "Fortran II"; "Algol 58" }
+                subgraph cluster2 { rank=same; 1959; "Lisp" }
+                subgraph cluster3 { rank=same; 1960; "COBOL"; "Algol 60"; "APL" }
+                subgraph cluster4 { rank=same; 1961; "CPL" }
+                subgraph cluster5 { rank=same; 1962; "Fortran IV" }
+                subgraph cluster6 { rank=same; 1963; "Simula I"; "JOSS"; "Snobol" }
+                subgraph cluster7 { rank=same; 1964; "Basic"; "PL/I" }
+                subgraph cluster8 { rank=same; 1966; "ISWIM"; "Algol W" }
+                subgraph cluster9 { rank=same; 1967; "Simula 67"; "Snobol4"; "Logo"; "Mumps" }
+                subgraph cluster10 { rank=same; 1968; "Algol 68"; "COBOL-68" }
+                subgraph cluster11 { rank=same; 1969; "Forth"; "Smalltalk"; "BCPL" }
+                subgraph cluster12 { rank=same; 1970; "Prolog"; "B" }
+                subgraph cluster13 { rank=same; 1971; "sh"; "C"; "Pascal" }
+                subgraph cluster14 { rank=same; 1972; "Smalltalk 72" }
+                subgraph cluster15 { rank=same; 1974; "Smalltalk 74"; "SEQUEL"; "CLU"; "COBOL-74" }
+                subgraph cluster16 { rank=same; 1975; "Modula"; "Scheme" }
+                subgraph cluster17 { rank=same; 1976; "SEQUEL/2"; "Beta"; "S"; "SASL"; "Smalltalk 76" }
+                subgraph cluster18 { rank=same; 1978; "C (K&R)"; "csh"; "Hope"; "awk"; "FP"; "Smalltalk 78"; "CSP"; "Scheme MIT" }
+                subgraph cluster19 { rank=same; 1977; "Standard Mumps"; "Modula-2"; "SQL"; "ML"; "Fortran 77" }
+                subgraph cluster20 { rank=same; 1979; "sed"; "REXX"; "Ada" }
+                subgraph cluster21 { rank=same; 1980; "Smalltalk 80"; "ABC" }
+                subgraph cluster22 { rank=same; 1981; "KRC"; "tcsh" }
+                subgraph cluster23 { rank=same; 1982; "REXX 3.0"; "PostScript" }
+                subgraph cluster24 { rank=same; 1983; "Pascal AFNOR"; "occam"; "ksh"; "Ada 83"; "Icon"; "BETA" }
+                subgraph cluster25 { rank=same; 1984; "Lazy ML"; "SML"; "APL 2"; "Scheme 84"; "Mumps 1984" }
+                subgraph cluster26 { rank=same; 1985; "Common Lisp"; "nawk"; "FL"; "Lean"; "Miranda"; "CLIPS"; "C++"; "Objective Pascal"; "COBOL-85" }
+                subgraph cluster27 { rank=same; 1986; "Scheme R3RS"; "ANSI SQL"; "Eiffel"; "Objective-C" }
+                subgraph cluster28 { rank=same; 1987; "Perl"; "ISO SQL"; "Self"; "Clean"; "Caml" }
+                subgraph cluster29 { rank=same; 1988; "Erlang"; "ksh88"; "Life"; "Oberon"; "A+"; "Quick Basic"; "Tcl"; "Scheme R4RS"; "Object REXX" }
+                subgraph cluster30 { rank=same; 1989; "bash"; "ANSI C"; "C (ANSI)"; "Concurrent Clean"; "Modula-3"; "Lambda Prolog"; "Eiffel 2"; "CLOS" }
+                subgraph cluster31 { rank=same; 1990; "Visual Basic"; "C++ (ARM)"; "Ease"; "Haskell"; "Fortran 90"; "SML 90"; "zsh" }
+                subgraph cluster32 { rank=same; 1991; "Oak"; "CLIPS 5.0"; "Oberon-2"; "Sather 0.1"; "Perl 4"; "Python"; "Gofer" }
+                subgraph cluster33 { rank=same; 1992; "Dylan"; "SQL-92"; "Cecil" }
+                subgraph cluster34 { rank=same; 1993; "R"; "Mercury"; "AppleScript"; "ksh93"; "K"; "NewtonScript" }
+                subgraph cluster35 { rank=same; 1994; "Sather 1.0"; "Lua"; "PostScript level 2"; "Common Lisp (ANSI)"; "Perl 5" }
+                subgraph cluster36 { rank=same; 1995; "Prolog ISO"; "Java"; "Oz 1"; "JavaScript"; "C 95"; "Delphi"; "Ada 95"; "Ruby"; "PHP" }
+                subgraph cluster37 { rank=same; 1996; "Limbo"; "bash 2.0"; "Pike"; "Squeak"; "OCaml"; "APL 96"; "Eiffel 3"; "Pizza" }
+                subgraph cluster38 { rank=same; 1997; "SML 97"; "J++"; "J"; "zsh 3.0"; "ECMAScript"; "NetREXX" }
+                subgraph cluster39 { rank=same; 1998; "REBOL"; "C++ (ISO)"; "Java 2"; "F-Script"; "Scheme R5RS"; "Perl 5.005"; "Haskell 98"; "ksh98" }
+                subgraph cluster40 { rank=same; 1999; "Python 1.5.2"; "Tcl 8.1"; "J++ 6.0"; ".NET"; "Oz 3"; "ECMAScript rel3"; "SQL-1999"; "C99"; "C 99" }
+                subgraph cluster41 { rank=same; 2000; "Lua 4.0"; "PHP4"; "Quilt"; "OCaml 3.0"; "C#"; "Mondrian"; "JavaScript 1.5"; "Python 2.0"; "Perl 5.6.0" }
+                subgraph cluster42 { rank=same; 2001; "GHC 5.00"; "zsh 4.0"; "VB.NET"; "XQuery" }
+                subgraph cluster43 { rank=same; 2002; "COBOL 2002"; "Perl 5.8.0"; "J#"; "SML.NET"; "Cyclone"; "Python 2.2"; "F#" }
+                subgraph cluster44 { rank=same; 2003; "Nice"; "GHC 6.0"; "Io"; "Boo"; "Ruby 1.8"; "Lua 5.0"; "Nemerle"; "SQL-2003"; "Fortran 2003" }
+                subgraph cluster45 { rank=same; 2004; "Java 5"; "Python 2.4"; "bash 3.0"; "PHP5"; "Groovy"; "Scala" }
+                subgraph cluster46 { rank=same; 2005; "Cyclone 1.0"; "C# 2.0"; "Unicon"; "Zonnon" }
+                subgraph cluster47 { rank=same; 2006; "JavaScript 1.7"; "Python 2.5"; "CAL (Open Quark)"; "Java 6" }
+                subgraph cluster48 { rank=same; 2007; "C# 3.0"; "Fortress 1.0beta"; "Groovy 1"; "Scheme R6RS"; "D 1.0" }
+                subgraph cluster49 { rank=same; 2008; "Python 3.0" }
+                subgraph cluster50 { rank=same; 2009; "Go" }
+                subgraph cluster51 { rank=same; 2010; "Haskell 2010"; "Rust" }
+                subgraph cluster52 { rank=same; 2011; "Java 7"; "Kotlin" }
+                subgraph cluster53 { rank=same; 2012; "C# 5.0" }
+                subgraph cluster54 { rank=same; 2014; "Java 8"; "Swift" }
+                subgraph cluster55 { rank=same; 2015; "JavaScript ES2015" }
+                subgraph cluster56 { rank=same; 2016; "JavaScript ES2106"; "Python 3.6" }
+                subgraph cluster57 { rank=same; 2017; "JavaScript ES2107" }
+
+                rankdir=LR
+                "Fortran 77" -> "Fortran 90" [id="Fortran 77" weight=2]
+                "Simula 67" -> "C++" [id="Simula 67" weight=2]
+                "Algol 68" -> "C++" [id="Algol 68" weight=2]
+                "C (K&R)" -> "C++" [id="C (K&R)" weight=2]
+                "Haskell 98" -> "Mondrian" [id="Haskell 98" weight=2]
+                ".NET" -> "Mondrian" [id=".NET" weight=2]
+                "Fortran II" -> "Fortran IV" [id="Fortran II" weight=2]
+                "Smalltalk 80" -> "AppleScript" [id="Smalltalk 80" weight=2]
+                "SQL-92" -> "SQL-1999" [id="SQL-92" weight=2]
+                "Perl 5" -> "Perl 5.005" [id="Perl 5" weight=2]
+                "Clean" -> "Concurrent Clean" [id="Clean" weight=2]
+                "Scheme R3RS" -> "Scheme R4RS" [id="Scheme R3RS" weight=2]
+                "Rust" -> "Swift" [id="Rust" weight=2]
+                "Objective-C" -> "Swift" [id="Objective-C" weight=2]
+                "CLU" -> "Swift" [id="CLU" weight=2]
+                "Haskell 2010" -> "Swift" [id="Haskell 2010" weight=2]
+                "C# 5.0" -> "Swift" [id="C# 5.0" weight=2]
+                "Ruby" -> "Swift" [id="Ruby" weight=2]
+                "D 1.0" -> "Swift" [id="D 1.0" weight=2]
+                "Python 2.0" -> "Swift" [id="Python 2.0" weight=2]
+                "C++" -> "C (ANSI)" [id="C++" weight=2]
+                "C (K&R)" -> "C (ANSI)" [id="C (K&R)" weight=2]
+                "APL" -> "APL 2" [id="APL" weight=2]
+                "SML" -> "Caml" [id="SML" weight=2]
+                ".NET" -> "SML.NET" [id=".NET" weight=2]
+                "SML 97" -> "SML.NET" [id="SML 97" weight=2]
+                "C (K&R)" -> "ANSI C" [id="C (K&R)" weight=2]
+                "JOSS" -> "Mumps" [id="JOSS" weight=2]
+                "Simula 67" -> "Eiffel" [id="Simula 67" weight=2]
+                "Ada 83" -> "Eiffel" [id="Ada 83" weight=2]
+                "Smalltalk 74" -> "Smalltalk 76" [id="Smalltalk 74" weight=2]
+                "Algol 60" -> "CPL" [id="Algol 60" weight=2]
+                "SQL" -> "ANSI SQL" [id="SQL" weight=2]
+                "Smalltalk 78" -> "Smalltalk 80" [id="Smalltalk 78" weight=2]
+                "APL 96" -> "J" [id="APL 96" weight=2]
+                "FL" -> "J" [id="FL" weight=2]
+                "SML" -> "Pizza" [id="SML" weight=2]
+                "Java" -> "Pizza" [id="Java" weight=2]
+                "C++" -> "D 1.0" [id="C++" weight=2]
+                "Java" -> "D 1.0" [id="Java" weight=2]
+                "C#" -> "D 1.0" [id="C#" weight=2]
+                "C99" -> "D 1.0" [id="C99" weight=2]
+                ".NET" -> "Scala" [id=".NET" weight=2]
+                "Java 2" -> "Scala" [id="Java 2" weight=2]
+                "OCaml" -> "Scala" [id="OCaml" weight=2]
+                "JavaScript ES2106" -> "JavaScript ES2107" [id="JavaScript ES2106" weight=2]
+                "C# 5.0" -> "JavaScript ES2107" [id="C# 5.0" weight=2]
+                "ISWIM" -> "SASL" [id="ISWIM" weight=2]
+                "ECMAScript rel3" -> "JavaScript 1.5" [id="ECMAScript rel3" weight=2]
+                "Lisp" -> "Logo" [id="Lisp" weight=2]
+                "Simula 67" -> "CLU" [id="Simula 67" weight=2]
+                "Pascal" -> "CLU" [id="Pascal" weight=2]
+                "BCPL" -> "B" [id="BCPL" weight=2]
+                "Lean" -> "Clean" [id="Lean" weight=2]
+                "Prolog" -> "Mercury" [id="Prolog" weight=2]
+                "Haskell" -> "Mercury" [id="Haskell" weight=2]
+                "SML 90" -> "Mercury" [id="SML 90" weight=2]
+                "PHP4" -> "PHP5" [id="PHP4" weight=2]
+                "Snobol4" -> "Icon" [id="Snobol4" weight=2]
+                "CLU" -> "Icon" [id="CLU" weight=2]
+                "C (K&R)" -> "Icon" [id="C (K&R)" weight=2]
+                "SEQUEL/2" -> "SQL" [id="SEQUEL/2" weight=2]
+                "Smalltalk 80" -> "Self" [id="Smalltalk 80" weight=2]
+                "Scheme 84" -> "Scheme R3RS" [id="Scheme 84" weight=2]
+                ".NET" -> "C#" [id=".NET" weight=2]
+                "Java 2" -> "C#" [id="Java 2" weight=2]
+                "C++ (ISO)" -> "C#" [id="C++ (ISO)" weight=2]
+                "Oz 1" -> "Oz 3" [id="Oz 1" weight=2]
+                "ECMAScript" -> "ECMAScript rel3" [id="ECMAScript" weight=2]
+                "Python 3.0" -> "Python 3.6" [id="Python 3.0" weight=2]
+                "Ada 83" -> "Ada 95" [id="Ada 83" weight=2]
+                "Objective Pascal" -> "Delphi" [id="Objective Pascal" weight=2]
+                "ML" -> "SML" [id="ML" weight=2]
+                "Java 2" -> "Groovy" [id="Java 2" weight=2]
+                "Ruby" -> "Groovy" [id="Ruby" weight=2]
+                "Modula-3" -> "Python" [id="Modula-3" weight=2]
+                "ABC" -> "Python" [id="ABC" weight=2]
+                "C (ANSI)" -> "Python" [id="C (ANSI)" weight=2]
+                "COBOL-68" -> "COBOL-74" [id="COBOL-68" weight=2]
+                "C (ANSI)" -> "C 95" [id="C (ANSI)" weight=2]
+                "C# 3.0" -> "C# 5.0" [id="C# 3.0" weight=2]
+                "Miranda" -> "Haskell" [id="Miranda" weight=2]
+                "Lazy ML" -> "Haskell" [id="Lazy ML" weight=2]
+                "nawk" -> "Tcl" [id="nawk" weight=2]
+                "Algol 60" -> "Algol W" [id="Algol 60" weight=2]
+                "Self" -> "NewtonScript" [id="Self" weight=2]
+                "Pascal" -> "Ada" [id="Pascal" weight=2]
+                "CSP" -> "Ada" [id="CSP" weight=2]
+                "ksh88" -> "zsh" [id="ksh88" weight=2]
+                "tcsh" -> "zsh" [id="tcsh" weight=2]
+                "A+" -> "K" [id="A+" weight=2]
+                "Scheme R4RS" -> "K" [id="Scheme R4RS" weight=2]
+                "JavaScript" -> "Kotlin" [id="JavaScript" weight=2]
+                "Scala" -> "Kotlin" [id="Scala" weight=2]
+                "C# 2.0" -> "Kotlin" [id="C# 2.0" weight=2]
+                "Java 5" -> "Kotlin" [id="Java 5" weight=2]
+                "Groovy" -> "Kotlin" [id="Groovy" weight=2]
+                "SQL-1999" -> "SQL-2003" [id="SQL-1999" weight=2]
+                "F#" -> "Nemerle" [id="F#" weight=2]
+                "Eiffel" -> "Eiffel 2" [id="Eiffel" weight=2]
+                "Visual Basic" -> "VB.NET" [id="Visual Basic" weight=2]
+                ".NET" -> "VB.NET" [id=".NET" weight=2]
+                "JavaScript 1.7" -> "JavaScript ES2015" [id="JavaScript 1.7" weight=2]
+                "Gofer" -> "Haskell 98" [id="Gofer" weight=2]
+                "Haskell" -> "Haskell 98" [id="Haskell" weight=2]
+                "SML" -> "Lambda Prolog" [id="SML" weight=2]
+                "Prolog" -> "Lambda Prolog" [id="Prolog" weight=2]
+                "Perl 5.005" -> "Perl 5.6.0" [id="Perl 5.005" weight=2]
+                "Smalltalk 80" -> "Ruby" [id="Smalltalk 80" weight=2]
+                "Eiffel 2" -> "Ruby" [id="Eiffel 2" weight=2]
+                "Python" -> "Ruby" [id="Python" weight=2]
+                "Perl 4" -> "Ruby" [id="Perl 4" weight=2]
+                "Java 6" -> "Java 7" [id="Java 6" weight=2]
+                "JavaScript" -> "ECMAScript" [id="JavaScript" weight=2]
+                "Lua 4.0" -> "Lua 5.0" [id="Lua 4.0" weight=2]
+                "Standard Mumps" -> "Mumps 1984" [id="Standard Mumps" weight=2]
+                "OCaml 3.0" -> "F#" [id="OCaml 3.0" weight=2]
+                ".NET" -> "F#" [id=".NET" weight=2]
+                "ksh93" -> "ksh98" [id="ksh93" weight=2]
+                "COBOL-74" -> "COBOL-85" [id="COBOL-74" weight=2]
+                "Erlang" -> "Rust" [id="Erlang" weight=2]
+                "Cyclone" -> "Rust" [id="Cyclone" weight=2]
+                "OCaml" -> "Rust" [id="OCaml" weight=2]
+                "Scheme R5RS" -> "Rust" [id="Scheme R5RS" weight=2]
+                "Limbo" -> "Rust" [id="Limbo" weight=2]
+                "C++" -> "Rust" [id="C++" weight=2]
+                "C# 2.0" -> "Rust" [id="C# 2.0" weight=2]
+                "Haskell 98" -> "Rust" [id="Haskell 98" weight=2]
+                "Eiffel" -> "Cecil" [id="Eiffel" weight=2]
+                "CLOS" -> "Cecil" [id="CLOS" weight=2]
+                "Fortran 90" -> "Fortran 2003" [id="Fortran 90" weight=2]
+                "Scheme" -> "Scheme MIT" [id="Scheme" weight=2]
+                "Python 2.0" -> "Python 2.2" [id="Python 2.0" weight=2]
+                "Object REXX" -> "NetREXX" [id="Object REXX" weight=2]
+                "REXX 3.0" -> "Object REXX" [id="REXX 3.0" weight=2]
+                "Quilt" -> "XQuery" [id="Quilt" weight=2]
+                "Common Lisp" -> "CLOS" [id="Common Lisp" weight=2]
+                "Perl 5" -> "PHP" [id="Perl 5" weight=2]
+                "Smalltalk 80" -> "Objective-C" [id="Smalltalk 80" weight=2]
+                "C (K&R)" -> "Objective-C" [id="C (K&R)" weight=2]
+                "Haskell 98" -> "GHC 5.00" [id="Haskell 98" weight=2]
+                "Smalltalk 76" -> "Smalltalk 78" [id="Smalltalk 76" weight=2]
+                "SML" -> "SML 90" [id="SML" weight=2]
+                "Scheme MIT" -> "Scheme 84" [id="Scheme MIT" weight=2]
+                "ISO SQL" -> "SQL-92" [id="ISO SQL" weight=2]
+                "PL/I" -> "Pascal" [id="PL/I" weight=2]
+                "Algol W" -> "Pascal" [id="Algol W" weight=2]
+                "Lisp" -> "Scheme" [id="Lisp" weight=2]
+                "Algol 60" -> "Scheme" [id="Algol 60" weight=2]
+                "Haskell" -> "Gofer" [id="Haskell" weight=2]
+                "Fortran IV" -> "Fortran 77" [id="Fortran IV" weight=2]
+                "C 95" -> "Cyclone" [id="C 95" weight=2]
+                "ANSI C" -> "C99" [id="ANSI C" weight=2]
+                "C 95" -> "C 99" [id="C 95" weight=2]
+                "csh" -> "tcsh" [id="csh" weight=2]
+                "Pascal AFNOR" -> "Objective Pascal" [id="Pascal AFNOR" weight=2]
+                "Modula-2" -> "Modula-3" [id="Modula-2" weight=2]
+                "Modula-2" -> "BETA" [id="Modula-2" weight=2]
+                "Smalltalk 80" -> "BETA" [id="Smalltalk 80" weight=2]
+                "ksh88" -> "ksh93" [id="ksh88" weight=2]
+                "zsh" -> "zsh 3.0" [id="zsh" weight=2]
+                "zsh 3.0" -> "zsh 4.0" [id="zsh 3.0" weight=2]
+                "Python 1.5.2" -> "Python 2.0" [id="Python 1.5.2" weight=2]
+                "sh" -> "ksh" [id="sh" weight=2]
+                "Algol 58" -> "Algol 60" [id="Algol 58" weight=2]
+                "GHC 6.0" -> "Haskell 2010" [id="GHC 6.0" weight=2]
+                "CLOS" -> "REBOL" [id="CLOS" weight=2]
+                "Flow-matic" -> "COBOL" [id="Flow-matic" weight=2]
+                "Smalltalk 80" -> "Squeak" [id="Smalltalk 80" weight=2]
+                "Self" -> "Squeak" [id="Self" weight=2]
+                "Logo" -> "Squeak" [id="Logo" weight=2]
+                "PL/I" -> "REXX" [id="PL/I" weight=2]
+                "Basic" -> "REXX" [id="Basic" weight=2]
+                "Lisp" -> "Common Lisp" [id="Lisp" weight=2]
+                "Scheme MIT" -> "Common Lisp" [id="Scheme MIT" weight=2]
+                "C++ (ARM)" -> "Pike" [id="C++ (ARM)" weight=2]
+                "Simula 67" -> "Smalltalk" [id="Simula 67" weight=2]
+                "PHP" -> "PHP4" [id="PHP" weight=2]
+                "Prolog" -> "Life" [id="Prolog" weight=2]
+                "ML" -> "Lazy ML" [id="ML" weight=2]
+                "KRC" -> "Lazy ML" [id="KRC" weight=2]
+                "GHC 5.00" -> "GHC 6.0" [id="GHC 5.00" weight=2]
+                "Pascal" -> "Modula" [id="Pascal" weight=2]
+                "Lua" -> "Lua 4.0" [id="Lua" weight=2]
+                "Perl 5.6.0" -> "Perl 5.8.0" [id="Perl 5.6.0" weight=2]
+                "C#" -> "C# 2.0" [id="C#" weight=2]
+                "NewtonScript" -> "Io" [id="NewtonScript" weight=2]
+                "Lua" -> "Io" [id="Lua" weight=2]
+                "Smalltalk 80" -> "Io" [id="Smalltalk 80" weight=2]
+                "Common Lisp" -> "Common Lisp (ANSI)" [id="Common Lisp" weight=2]
+                "SML 90" -> "SML 97" [id="SML 90" weight=2]
+                "REXX" -> "REXX 3.0" [id="REXX" weight=2]
+                "C++ (ARM)" -> "C++ (ISO)" [id="C++ (ARM)" weight=2]
+                "Oberon" -> "Oberon-2" [id="Oberon" weight=2]
+                "Python 2.2" -> "Python 2.4" [id="Python 2.2" weight=2]
+                "Java 2" -> "Java 5" [id="Java 2" weight=2]
+                "Java 7" -> "Java 8" [id="Java 7" weight=2]
+                "PostScript" -> "PostScript level 2" [id="PostScript" weight=2]
+                "CLOS" -> "CLIPS 5.0" [id="CLOS" weight=2]
+                "CLIPS" -> "CLIPS 5.0" [id="CLIPS" weight=2]
+                "JavaScript 1.5" -> "JavaScript 1.7" [id="JavaScript 1.5" weight=2]
+                "C" -> "C (K&R)" [id="C" weight=2]
+                "COBOL-85" -> "COBOL 2002" [id="COBOL-85" weight=2]
+                "sh" -> "Perl" [id="sh" weight=2]
+                "nawk" -> "Perl" [id="nawk" weight=2]
+                "sed" -> "Perl" [id="sed" weight=2]
+                "Algol 60" -> "Algol 68" [id="Algol 60" weight=2]
+                "Java 2" -> "Nice" [id="Java 2" weight=2]
+                "OCaml" -> "Nice" [id="OCaml" weight=2]
+                "CLOS" -> "Nice" [id="CLOS" weight=2]
+                "Pascal" -> "Pascal AFNOR" [id="Pascal" weight=2]
+                "C++ (ARM)" -> "Oak" [id="C++ (ARM)" weight=2]
+                "Fortran IV" -> "Basic" [id="Fortran IV" weight=2]
+                "JOSS" -> "Basic" [id="JOSS" weight=2]
+                "Quick Basic" -> "Visual Basic" [id="Quick Basic" weight=2]
+                "Mumps" -> "Standard Mumps" [id="Mumps" weight=2]
+                "CSP" -> "occam" [id="CSP" weight=2]
+                "JavaScript ES2015" -> "JavaScript ES2106" [id="JavaScript ES2015" weight=2]
+                "Perl 4" -> "Lua" [id="Perl 4" weight=2]
+                "Pascal AFNOR" -> "Lua" [id="Pascal AFNOR" weight=2]
+                "Python" -> "Python 1.5.2" [id="Python" weight=2]
+                "ML" -> "Hope" [id="ML" weight=2]
+                "Smalltalk" -> "Smalltalk 72" [id="Smalltalk" weight=2]
+                "Algol 60" -> "PL/I" [id="Algol 60" weight=2]
+                "Fortran IV" -> "PL/I" [id="Fortran IV" weight=2]
+                "COBOL" -> "PL/I" [id="COBOL" weight=2]
+                "ksh" -> "ksh88" [id="ksh" weight=2]
+                "C" -> "csh" [id="C" weight=2]
+                "sh" -> "csh" [id="sh" weight=2]
+                "bash" -> "bash 2.0" [id="bash" weight=2]
+                "C 95" -> "Limbo" [id="C 95" weight=2]
+                "CSP" -> "Limbo" [id="CSP" weight=2]
+                "Java" -> "Limbo" [id="Java" weight=2]
+                "Common Lisp" -> "Erlang" [id="Common Lisp" weight=2]
+                "Prolog" -> "Erlang" [id="Prolog" weight=2]
+                "Smalltalk 72" -> "Smalltalk 74" [id="Smalltalk 72" weight=2]
+                "Sather 0.1" -> "Sather 1.0" [id="Sather 0.1" weight=2]
+                "Cyclone" -> "Cyclone 1.0" [id="Cyclone" weight=2]
+                "CPL" -> "BCPL" [id="CPL" weight=2]
+                "occam" -> "Ease" [id="occam" weight=2]
+                "Ruby" -> "Ruby 1.8" [id="Ruby" weight=2]
+                "sh" -> "bash" [id="sh" weight=2]
+                "csh" -> "bash" [id="csh" weight=2]
+                "ksh" -> "bash" [id="ksh" weight=2]
+                "Oak" -> "Java" [id="Oak" weight=2]
+                "Algol 68" -> "C" [id="Algol 68" weight=2]
+                "B" -> "C" [id="B" weight=2]
+                "CLU" -> "C++ (ARM)" [id="CLU" weight=2]
+                "C++" -> "C++ (ARM)" [id="C++" weight=2]
+                "Ada 83" -> "C++ (ARM)" [id="Ada 83" weight=2]
+                "Fortran I" -> "Algol 58" [id="Fortran I" weight=2]
+                "Scheme R5RS" -> "Scheme R6RS" [id="Scheme R5RS" weight=2]
+                "Prolog" -> "Prolog ISO" [id="Prolog" weight=2]
+                "Groovy" -> "Groovy 1" [id="Groovy" weight=2]
+                "Smalltalk 80" -> "F-Script" [id="Smalltalk 80" weight=2]
+                "APL" -> "F-Script" [id="APL" weight=2]
+                "Algol 58" -> "JOSS" [id="Algol 58" weight=2]
+                "C" -> "awk" [id="C" weight=2]
+                "Snobol4" -> "awk" [id="Snobol4" weight=2]
+                "SEQUEL" -> "SEQUEL/2" [id="SEQUEL" weight=2]
+                "Haskell 98" -> "CAL (Open Quark)" [id="Haskell 98" weight=2]
+                "Java 2" -> "CAL (Open Quark)" [id="Java 2" weight=2]
+                "Icon" -> "Unicon" [id="Icon" weight=2]
+                "Tcl" -> "Tcl 8.1" [id="Tcl" weight=2]
+                "Ada" -> "Ada 83" [id="Ada" weight=2]
+                "Java 5" -> "Java 6" [id="Java 5" weight=2]
+                "J++" -> "J++ 6.0" [id="J++" weight=2]
+                "bash 2.0" -> "bash 3.0" [id="bash 2.0" weight=2]
+                "Java" -> "JavaScript" [id="Java" weight=2]
+                "Self" -> "JavaScript" [id="Self" weight=2]
+                "Java" -> "J++" [id="Java" weight=2]
+                "Basic" -> "Quick Basic" [id="Basic" weight=2]
+                "C++ (ARM)" -> "Dylan" [id="C++ (ARM)" weight=2]
+                "CLOS" -> "Dylan" [id="CLOS" weight=2]
+                "Smalltalk 80" -> "Dylan" [id="Smalltalk 80" weight=2]
+                "Simula 67" -> "Beta" [id="Simula 67" weight=2]
+                "Eiffel 2" -> "Eiffel 3" [id="Eiffel 2" weight=2]
+                "Perl" -> "Perl 4" [id="Perl" weight=2]
+                "Life" -> "Oz 1" [id="Life" weight=2]
+                "APL 2" -> "A+" [id="APL 2" weight=2]
+                "Prolog" -> "CLIPS" [id="Prolog" weight=2]
+                "Scheme R4RS" -> "Scheme R5RS" [id="Scheme R4RS" weight=2]
+                "Oberon-2" -> "Zonnon" [id="Oberon-2" weight=2]
+                ".NET" -> "Zonnon" [id=".NET" weight=2]
+                "Forth" -> "PostScript" [id="Forth" weight=2]
+                "C" -> "Go" [id="C" weight=2]
+                "APL 96" -> "Go" [id="APL 96" weight=2]
+                "Pascal" -> "Go" [id="Pascal" weight=2]
+                "occam" -> "Go" [id="occam" weight=2]
+                "Python 2.0" -> "Go" [id="Python 2.0" weight=2]
+                "Oberon-2" -> "Go" [id="Oberon-2" weight=2]
+                "Modula-3" -> "Go" [id="Modula-3" weight=2]
+                "Limbo" -> "Go" [id="Limbo" weight=2]
+                "Smalltalk 80" -> "Go" [id="Smalltalk 80" weight=2]
+                "CSP" -> "Go" [id="CSP" weight=2]
+                "Python 2.5" -> "Python 3.0" [id="Python 2.5" weight=2]
+                "J++ 6.0" -> "J#" [id="J++ 6.0" weight=2]
+                ".NET" -> "J#" [id=".NET" weight=2]
+                "S" -> "R" [id="S" weight=2]
+                "Common Lisp" -> "R" [id="Common Lisp" weight=2]
+                "Scheme" -> "R" [id="Scheme" weight=2]
+                ".NET" -> "Boo" [id=".NET" weight=2]
+                "Python" -> "Boo" [id="Python" weight=2]
+                "C# 2.0" -> "C# 3.0" [id="C# 2.0" weight=2]
+                "Modula" -> "Modula-2" [id="Modula" weight=2]
+                "Caml" -> "OCaml" [id="Caml" weight=2]
+                "Java" -> "Java 2" [id="Java" weight=2]
+                "OCaml" -> "OCaml 3.0" [id="OCaml" weight=2]
+                "SASL" -> "Miranda" [id="SASL" weight=2]
+                "Hope" -> "Miranda" [id="Hope" weight=2]
+                "ML" -> "Miranda" [id="ML" weight=2]
+                "KRC" -> "Miranda" [id="KRC" weight=2]
+                "Algol 60" -> "Simula I" [id="Algol 60" weight=2]
+                "Eiffel 2" -> "Sather 0.1" [id="Eiffel 2" weight=2]
+                "Snobol" -> "Snobol4" [id="Snobol" weight=2]
+                "ANSI SQL" -> "ISO SQL" [id="ANSI SQL" weight=2]
+                "Modula-2" -> "Oberon" [id="Modula-2" weight=2]
+                "COBOL" -> "COBOL-68" [id="COBOL" weight=2]
+                "SML" -> "Lean" [id="SML" weight=2]
+                "Simula I" -> "Simula 67" [id="Simula I" weight=2]
+                "SASL" -> "KRC" [id="SASL" weight=2]
+                "Scala" -> "Fortress 1.0beta" [id="Scala" weight=2]
+                "Fortran 2003" -> "Fortress 1.0beta" [id="Fortran 2003" weight=2]
+                "FP" -> "FL" [id="FP" weight=2]
+                "APL 2" -> "APL 96" [id="APL 2" weight=2]
+                "SQL-92" -> "Quilt" [id="SQL-92" weight=2]
+                "Perl 4" -> "Perl 5" [id="Perl 4" weight=2]
+                "awk" -> "nawk" [id="awk" weight=2]
+                "Python 2.4" -> "Python 2.5" [id="Python 2.4" weight=2]
+                "Fortran I" -> "Fortran II" [id="Fortran I" weight=2]
+            }`;
+
+        var dotSrcLines;
+        var graphviz = d3.select("#graph").graphviz();
+        function render() {
+            // optionally log whole dataviz dot data structure
+            // console.log('DOT source =', dotSrc);
+            dotSrcLines = dotSrc.split('\n');
+            graphviz
+                .transition(function () {
+                    return d3.transition()
+                        .delay(100)
+                        .duration(1000);
+                })
+                .renderDot(dotSrc)
+                .on("end", interactive);
+        }
+        // function noWay() {
+        //     fetch('http://example.com/movies.json')
+        //         .then(response => response.json())
+        //         .then(data => console.log(data));
+        // }
+        function interactive() {
+            nodes = d3.selectAll('.node,.edge');
+            // nodes = d3.selectAll('.node');
+            // edges = d3.selectAll('.edge');
+            // consider stroke vs fill, out vs in
+            nodes
+                .on("mouseover", function (d) {
+                    d3.select(d3.event.target).style("stroke", "red").transition().delay(5000);
+                })
+                .on("mouseout", function (d) {
+                    d3.select(d3.event.target).transition().delay(5000).style("stroke", "blue");
+                })
+                .on("click", function () {
+                    // console.log('yup')
+                    var title = d3.select(this).selectAll('title').text().trim();
+                    var text = d3.select(this).selectAll('text').text();
+                    var id = d3.select(this).attr('id');
+                    var class1 = d3.select(this).attr('class');
+                    // console.log(title);
+                    console.log(text);
+                    // noWay()
+
+
+                    // console.log(text);
+                    // console.log(id);
+                    // console.log(class1);
+                    // console.log(dotSrcLines);
+                    // dotElement = title.replace('->', ' -> ');
+                    // console.log('Element id="%s" class="%s" title="%s" text="%s" dotElement="%s"', id, class1, title, text, dotElement);
+                    // console.log('Finding and deleting references to %s "%s" from the DOT source', class1, dotElement);
+
+                });
+
+            // if you were going to delete on click
+            // nodes
+            //     .on("click", function () {
+            //         var title = d3.select(this).selectAll('title').text().trim();
+            //         var text = d3.select(this).selectAll('text').text();
+            //         var id = d3.select(this).attr('id');
+            //         var class1 = d3.select(this).attr('class');
+            //         dotElement = title.replace('->', ' -> ');
+            //         console.log('Element id="%s" class="%s" title="%s" text="%s" dotElement="%s"', id, class1, title, text, dotElement);
+            //         console.log('Finding and deleting references to %s "%s" from the DOT source', class1, dotElement);
+            //         for (i = 0; i < dotSrcLines.length;) {
+            //             if (dotSrcLines[i].indexOf(dotElement) >= 0) {
+            //                 console.log('Deleting line %d: %s', i, dotSrcLines[i]);
+            //                 dotSrcLines.splice(i, 1);
+            //             } else {
+            //                 i++;
+            //             }
+            //         }
+            //         dotSrc = dotSrcLines.join('\n');
+            //         render();
+            //     });
+        }
+        render(dotSrc);
+    </script>
+</body>
