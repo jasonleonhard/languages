@@ -12,13 +12,20 @@
 
     dot -Tpng -O diagram.dot
 
+## rename as just .png
+
+    mv diagram.dot.png diagram.png
+
 ## Open
 
-    open diagram.dot.png
+    open diagram.png
 
-<p>
-    <a href="https://github.com/jasonleonhard/languages/blob/master/diagram.dot.png?raw=true">
-        <img src="https://drive.google.com/viewerng/
-    viewer?embedded=true&url=https://github.com/jasonleonhard/languages/blob/master/diagram.dot.png?raw=true" alt="https://github.com/jasonleonhard/languages/blob/master/diagram.dot.png?raw=true" height="100%" width="100%">
-    </a>
-</p>
+<a href="https://github.com/jasonleonhard/languages/blob/master/diagram.png">
+    <img src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=https://github.com/jasonleonhard/languages/blob/master/diagram.png" alt="https://github.com/jasonleonhard/languages/blob/master/diagram.png" height="100%" width="100%">
+</a>
+
+<a href="https://github.com/jasonleonhard/languages/blob/master/diagram.png?raw=true">
+    <img src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=https://github.com/jasonleonhard/languages/blob/master/diagram.png?raw=true" alt="https://github.com/jasonleonhard/languages/blob/master/diagram.png?raw=true" height="100%" width="100%">
+</a>
