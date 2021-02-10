@@ -1,0 +1,400 @@
+
+digraph dd {
+  {
+    node [ shape=plaintext,fontsize=25 ];
+
+1957 -> 1958 -> 1959 -> 1960 -> 1961 -> 1962 -> 1963 -> 1964 -> 1965 -> 1966 -> 1967 -> 1968 -> 1969 -> 1970 -> 1971 -> 1972 -> 1973 -> 1974 -> 1975 -> 1976 -> 1977 -> 1978 -> 1979 -> 1980 -> 1981 -> 1982 -> 1983 -> 1984 -> 1985 -> 1986 -> 1987 -> 1988 -> 1989 -> 1990 -> 1991 -> 1992 -> 1993 -> 1994 -> 1995 -> 1996 -> 1997 -> 1998 -> 1999 -> 2000 -> 2001 -> 2002 -> 2003 -> 2004 -> 2005 -> 2006 -> 2007 -> 2008 -> 2009 -> 2010 -> 2011 -> 2012 -> 2013 -> 2014 -> 2015 -> 2016 -> 2017
+  }
+
+node [ fontsize=30, style=filled ];
+{ rank = same ; 1983 ; "Pascal AFNOR" ; "occam" ; "ksh" ; "Ada 83" [ fontsize=40 ] ; "Icon" ; "BETA" }
+{ rank = same ; 2005 ; "Cyclone 1.0" ; "C# 2.0" [ fontsize=40 ] ; "Unicon" ; "Zonnon" }
+{ rank = same ; 1971 ; "sh" ; "C" ; "Pascal" [ fontsize=40 ] }
+{ rank = same ; 1969 ; "Forth" ; "Smalltalk" [ fontsize=40 ] ; "BCPL" }
+{ rank = same ; 1995 ; "Prolog ISO" ; "Java" [ fontsize=40 ] ; "Oz 1" ; "JavaScript" [ fontsize=40 ] ; "C 95" ; "Delphi" ; "Ada 95" ; "Ruby" [ fontsize=40 ] ; "PHP" }
+{ rank = same ; 1977 ; "Standard Mumps" ; "Modula-2" ; "SQL" ; "ML" [ fontsize=40 ] ; "Fortran 77" [ fontsize=40 ] }
+{ rank = same ; 2015 ; "JavaScript ES2015" }
+{ rank = same ; 1958 ; "Fortran II" ; "Algol 58" }
+{ rank = same ; 1970 ; "Prolog" [ fontsize=40 ] ; "B" }
+{ rank = same ; 1999 ; "Python 1.5.2" ; "Tcl 8.1" ; "J++ 6.0" ; ".NET" ; "Oz 3" ; "ECMAScript rel3" ; "SQL-1999" ; "C99" ; "C 99" }
+{ rank = same ; 1976 ; "SEQUEL/2" ; "Beta" ; "S" ; "SASL" ; "Smalltalk 76" }
+{ rank = same ; 2009 ; "Go" [ fontsize=40 ] }
+{ rank = same ; 1957 ; "Flow-matic" ; "Fortran I" [ fontsize=40 ] }
+{ rank = same ; 1978 ; "C (K&R)" [ fontsize=40 ] ; "csh" ; "Hope" ; "awk" ; "FP" ; "Smalltalk 78" ; "CSP" ; "Scheme MIT" }
+{ rank = same ; 1963 ; "Simula I" ; "JOSS" ; "Snobol" }
+{ rank = same ; 1989 ; "bash" ; "ANSI C" ; "C (ANSI)" ; "Concurrent Clean" ; "Modula-3" ; "Lambda Prolog" ; "Eiffel 2" ; "CLOS" }
+{ rank = same ; 2003 ; "Nice" ; "GHC 6.0" ; "Io" ; "Boo" ; "Ruby 1.8" ; "Lua 5.0" ; "Nemerle" ; "SQL-2003" ; "Fortran 2003" }
+{ rank = same ; 1985 ; "Common Lisp" [ fontsize=40 ] ; "nawk" ; "FL" ; "Lean" ; "Miranda" ; "CLIPS" ; "C++" [ fontsize=40 ] ; "Objective Pascal" ; "COBOL-85" }
+{ rank = same ; 1972 ; "Smalltalk 72" }
+{ rank = same ; 1974 ; "Smalltalk 74" ; "SEQUEL" ; "CLU" ; "COBOL-74" }
+{ rank = same ; 1993 ; "R" ; "Mercury" ; "AppleScript" ; "ksh93" ; "K" ; "NewtonScript" }
+{ rank = same ; 1962 ; "Fortran IV" }
+{ rank = same ; 1964 ; "Basic" ; "PL/I" [ fontsize=40 ] }
+{ rank = same ; 2008 ; "Python 3.0" }
+{ rank = same ; 1986 ; "Scheme R3RS" ; "ANSI SQL" ; "Eiffel" [ fontsize=40 ] ; "Objective-C" }
+{ rank = same ; 1998 ; "REBOL" ; "C++ (ISO)" [ fontsize=40 ] ; "Java 2" ; "F-Script" ; "Scheme R5RS" [ fontsize=40 ] ; "Perl 5.005" ; "Haskell 98" [ fontsize=40 ] ; "ksh98" }
+{ rank = same ; 1981 ; "KRC" ; "tcsh" }
+{ rank = same ; 1959 ; "Lisp" [ fontsize=40 ] }
+{ rank = same ; 1994 ; "Sather 1.0" ; "Lua" ; "PostScript level 2" ; "Common Lisp (ANSI)" ; "Perl 5" [ fontsize=40 ] }
+{ rank = same ; 1992 ; "Dylan" ; "SQL-92" ; "Cecil" }
+{ rank = same ; 2014 ; "Java 8" [ fontsize=40 ] ; "Swift" [ fontsize=40 ] }
+{ rank = same ; 2012 ; "C# 5.0" [ fontsize=40 ] }
+{ rank = same ; 2002 ; "COBOL 2002" ; "Perl 5.8.0" ; "J#" ; "SML.NET" ; "Cyclone" ; "Python 2.2" ; "F#" }
+{ rank = same ; 2004 ; "Java 5" [ fontsize=40 ] ; "Python 2.4" ; "bash 3.0" ; "PHP5" ; "Groovy" ; "Scala" }
+{ rank = same ; 1980 ; "Smalltalk 80" [ fontsize=40 ] ; "ABC" }
+{ rank = same ; 1968 ; "Algol 68" ; "COBOL-68" }
+{ rank = same ; 1987 ; "Perl" [ fontsize=40 ] ; "ISO SQL" ; "Self" ; "Clean" ; "Caml" [ fontsize=40 ] }
+{ rank = same ; 2017 ; "JavaScript ES2107" [ fontsize=40 ] }
+{ rank = same ; 1975 ; "Modula" ; "Scheme" [ fontsize=40 ] }
+{ rank = same ; 2001 ; "GHC 5.00" ; "zsh 4.0" ; "VB.NET" ; "XQuery" }
+{ rank = same ; 1966 ; "ISWIM" ; "Algol W" }
+{ rank = same ; 1997 ; "SML 97" ; "J++" ; "J" ; "zsh 3.0" ; "ECMAScript" ; "NetREXX" }
+{ rank = same ; 1990 ; "Visual Basic" ; "C++ (ARM)" ; "Ease" ; "Haskell" ; "Fortran 90" [ fontsize=40 ] ; "SML 90" ; "zsh" }
+{ rank = same ; 2010 ; "Haskell 2010" [ fontsize=40 ] ; "Rust" [ fontsize=40 ] }
+{ rank = same ; 2000 ; "Lua 4.0" ; "PHP4" ; "Quilt" ; "OCaml 3.0" ; "C#" [ fontsize=40 ] ; "Mondrian" ; "JavaScript 1.5" ; "Python 2.0" [ fontsize=40 ] ; "Perl 5.6.0" }
+{ rank = same ; 1984 ; "Lazy ML" ; "SML" [ fontsize=40 ] ; "APL 2" ; "Scheme 84" ; "Mumps 1984" }
+{ rank = same ; 1982 ; "REXX 3.0" ; "PostScript" }
+{ rank = same ; 2011 ; "Java 7" ; "Kotlin" [ fontsize=40 ] }
+{ rank = same ; 1991 ; "Oak" ; "CLIPS 5.0" ; "Oberon-2" ; "Sather 0.1" ; "Perl 4" ; "Python" [ fontsize=40 ] ; "Gofer" }
+{ rank = same ; 2007 ; "C# 3.0" ; "Fortress 1.0beta" ; "Groovy 1" ; "Scheme R6RS" ; "D 1.0" }
+{ rank = same ; 1988 ; "Erlang" ; "ksh88" ; "Life" ; "Oberon" ; "A+" ; "Quick Basic" ; "Tcl" [ fontsize=40 ] ; "Scheme R4RS" ; "Object REXX" }
+{ rank = same ; 1960 ; "COBOL" [ fontsize=40 ] ; "Algol 60" [ fontsize=40 ] ; "APL" }
+{ rank = same ; 2016 ; "JavaScript ES2106" ; "Python 3.6" }
+{ rank = same ; 1996 ; "Limbo" ; "bash 2.0" ; "Pike" ; "Squeak" ; "OCaml" [ fontsize=40 ] ; "APL 96" ; "Eiffel 3" ; "Pizza" }
+{ rank = same ; 1967 ; "Simula 67" ; "Snobol4" ; "Logo" ; "Mumps" }
+{ rank = same ; 1979 ; "sed" ; "REXX" ; "Ada" }
+{ rank = same ; 2006 ; "JavaScript 1.7" ; "Python 2.5" ; "CAL (Open Quark)" ; "Java 6" }
+{ rank = same ; 1961 ; "CPL" }
+
+"Fortran 77" -> "Fortran 90" [weight=3]
+"Simula 67" -> "C++"
+"Algol 68" -> "C++"
+"C (K&R)" -> "C++"
+"Haskell 98" -> "Mondrian"
+".NET" -> "Mondrian"
+"Fortran II" -> "Fortran IV" [weight=3]
+"Smalltalk 80" -> "AppleScript"
+"SQL-92" -> "SQL-1999" [weight=3]
+"Perl 5" -> "Perl 5.005" [weight=3]
+"Clean" -> "Concurrent Clean" [weight=3]
+"Scheme R3RS" -> "Scheme R4RS" [weight=3]
+"Rust" -> "Swift"
+"Objective-C" -> "Swift"
+"CLU" -> "Swift"
+"Haskell 2010" -> "Swift"
+"C# 5.0" -> "Swift"
+"Ruby" -> "Swift"
+"D 1.0" -> "Swift"
+"Python 2.0" -> "Swift"
+"C++" -> "C (ANSI)"
+"C (K&R)" -> "C (ANSI)"
+"APL" -> "APL 2" [weight=3]
+"SML" -> "Caml"
+".NET" -> "SML.NET"
+"SML 97" -> "SML.NET"
+"C (K&R)" -> "ANSI C" [weight=3]
+"JOSS" -> "Mumps" [weight=3]
+"Simula 67" -> "Eiffel"
+"Ada 83" -> "Eiffel"
+"Smalltalk 74" -> "Smalltalk 76" [weight=3]
+"Algol 60" -> "CPL"
+"SQL" -> "ANSI SQL" [weight=3]
+"Smalltalk 78" -> "Smalltalk 80" [weight=3]
+"APL 96" -> "J"
+"FL" -> "J"
+"SML" -> "Pizza"
+"Java" -> "Pizza"
+"C++" -> "D 1.0"
+"Java" -> "D 1.0"
+"C#" -> "D 1.0"
+"C99" -> "D 1.0"
+".NET" -> "Scala"
+"Java 2" -> "Scala"
+"OCaml" -> "Scala"
+"JavaScript ES2106" -> "JavaScript ES2107" [weight=3]
+"C# 5.0" -> "JavaScript ES2107"
+"ISWIM" -> "SASL" [weight=3]
+"ECMAScript rel3" -> "JavaScript 1.5" [weight=3]
+"Lisp" -> "Logo"
+"Simula 67" -> "CLU"
+"Pascal" -> "CLU"
+"BCPL" -> "B" [weight=3]
+"Lean" -> "Clean" [weight=3]
+"Prolog" -> "Mercury"
+"Haskell" -> "Mercury"
+"SML 90" -> "Mercury"
+"PHP4" -> "PHP5" [weight=3]
+"Snobol4" -> "Icon"
+"CLU" -> "Icon"
+"C (K&R)" -> "Icon"
+"SEQUEL/2" -> "SQL" [weight=3]
+"Smalltalk 80" -> "Self"
+"Scheme 84" -> "Scheme R3RS" [weight=3]
+".NET" -> "C#"
+"Java 2" -> "C#"
+"C++ (ISO)" -> "C#"
+"Oz 1" -> "Oz 3" [weight=3]
+"ECMAScript" -> "ECMAScript rel3" [weight=3]
+"Python 3.0" -> "Python 3.6" [weight=3]
+"Ada 83" -> "Ada 95" [weight=3]
+"Objective Pascal" -> "Delphi" [weight=3]
+"ML" -> "SML" [weight=3]
+"Java 2" -> "Groovy"
+"Ruby" -> "Groovy"
+"Modula-3" -> "Python"
+"ABC" -> "Python" [weight=3]
+"C (ANSI)" -> "Python"
+"COBOL-68" -> "COBOL-74" [weight=3]
+"C (ANSI)" -> "C 95" [weight=3]
+"C# 3.0" -> "C# 5.0" [weight=3]
+"Miranda" -> "Haskell"
+"Lazy ML" -> "Haskell"
+"nawk" -> "Tcl"
+"Algol 60" -> "Algol W"
+"Self" -> "NewtonScript"
+"Pascal" -> "Ada"
+"CSP" -> "Ada"
+"ksh88" -> "zsh"
+"tcsh" -> "zsh"
+"A+" -> "K"
+"Scheme R4RS" -> "K"
+"JavaScript" -> "Kotlin"
+"Scala" -> "Kotlin"
+"C# 2.0" -> "Kotlin"
+"Java 5" -> "Kotlin"
+"Groovy" -> "Kotlin"
+"SQL-1999" -> "SQL-2003" [weight=3]
+"F#" -> "Nemerle" [weight=3]
+"Eiffel" -> "Eiffel 2" [weight=3]
+"Visual Basic" -> "VB.NET"
+".NET" -> "VB.NET"
+"JavaScript 1.7" -> "JavaScript ES2015" [weight=3]
+"Gofer" -> "Haskell 98"
+"Haskell" -> "Haskell 98"
+"SML" -> "Lambda Prolog"
+"Prolog" -> "Lambda Prolog"
+"Perl 5.005" -> "Perl 5.6.0" [weight=3]
+"Smalltalk 80" -> "Ruby"
+"Eiffel 2" -> "Ruby"
+"Python" -> "Ruby"
+"Perl 4" -> "Ruby"
+"Java 6" -> "Java 7" [weight=3]
+"JavaScript" -> "ECMAScript" [weight=3]
+"Lua 4.0" -> "Lua 5.0" [weight=3]
+"Standard Mumps" -> "Mumps 1984" [weight=3]
+"OCaml 3.0" -> "F#"
+".NET" -> "F#"
+"ksh93" -> "ksh98" [weight=3]
+"COBOL-74" -> "COBOL-85" [weight=3]
+"Erlang" -> "Rust"
+"Cyclone" -> "Rust"
+"OCaml" -> "Rust"
+"Scheme R5RS" -> "Rust"
+"Limbo" -> "Rust"
+"C++" -> "Rust"
+"C# 2.0" -> "Rust"
+"Haskell 98" -> "Rust"
+"Eiffel" -> "Cecil"
+"CLOS" -> "Cecil"
+"Fortran 90" -> "Fortran 2003" [weight=3]
+"Scheme" -> "Scheme MIT" [weight=3]
+"Python 2.0" -> "Python 2.2" [weight=3]
+"Object REXX" -> "NetREXX" [weight=3]
+"REXX 3.0" -> "Object REXX" [weight=3]
+"Quilt" -> "XQuery" [weight=3]
+"Common Lisp" -> "CLOS"
+"Perl 5" -> "PHP"
+"Smalltalk 80" -> "Objective-C"
+"C (K&R)" -> "Objective-C"
+"Haskell 98" -> "GHC 5.00" [weight=3]
+"Smalltalk 76" -> "Smalltalk 78" [weight=3]
+"SML" -> "SML 90" [weight=3]
+"Scheme MIT" -> "Scheme 84" [weight=3]
+"ISO SQL" -> "SQL-92" [weight=3]
+"PL/I" -> "Pascal"
+"Algol W" -> "Pascal" [weight=3]
+"Lisp" -> "Scheme"
+"Algol 60" -> "Scheme"
+"Haskell" -> "Gofer"
+"Fortran IV" -> "Fortran 77" [weight=3]
+"C 95" -> "Cyclone"
+"ANSI C" -> "C99" [weight=3]
+"C 95" -> "C 99" [weight=3]
+"csh" -> "tcsh" [weight=3]
+"Pascal AFNOR" -> "Objective Pascal" [weight=3]
+"Modula-2" -> "Modula-3" [weight=3]
+"Modula-2" -> "BETA"
+"Smalltalk 80" -> "BETA"
+"ksh88" -> "ksh93" [weight=3]
+"zsh" -> "zsh 3.0" [weight=3]
+"zsh 3.0" -> "zsh 4.0" [weight=3]
+"Python 1.5.2" -> "Python 2.0" [weight=3]
+"sh" -> "ksh"
+"Algol 58" -> "Algol 60" [weight=3]
+"GHC 6.0" -> "Haskell 2010" [weight=3]
+"CLOS" -> "REBOL"
+"Flow-matic" -> "COBOL"
+"Smalltalk 80" -> "Squeak"
+"Self" -> "Squeak"
+"Logo" -> "Squeak"
+"PL/I" -> "REXX"
+"Basic" -> "REXX"
+"Lisp" -> "Common Lisp"
+"Scheme MIT" -> "Common Lisp"
+"C++ (ARM)" -> "Pike"
+"Simula 67" -> "Smalltalk"
+"PHP" -> "PHP4" [weight=3]
+"Prolog" -> "Life"
+"ML" -> "Lazy ML"
+"KRC" -> "Lazy ML"
+"GHC 5.00" -> "GHC 6.0" [weight=3]
+"Pascal" -> "Modula"
+"Lua" -> "Lua 4.0" [weight=3]
+"Perl 5.6.0" -> "Perl 5.8.0" [weight=3]
+"C#" -> "C# 2.0" [weight=3]
+"NewtonScript" -> "Io"
+"Lua" -> "Io"
+"Smalltalk 80" -> "Io"
+"Common Lisp" -> "Common Lisp (ANSI)" [weight=3]
+"SML 90" -> "SML 97" [weight=3]
+"REXX" -> "REXX 3.0" [weight=3]
+"C++ (ARM)" -> "C++ (ISO)" [weight=3]
+"Oberon" -> "Oberon-2" [weight=3]
+"Python 2.2" -> "Python 2.4" [weight=3]
+"Java 2" -> "Java 5" [weight=3]
+"Java 7" -> "Java 8" [weight=3]
+"PostScript" -> "PostScript level 2" [weight=3]
+"CLOS" -> "CLIPS 5.0"
+"CLIPS" -> "CLIPS 5.0" [weight=3]
+"JavaScript 1.5" -> "JavaScript 1.7" [weight=3]
+"C" -> "C (K&R)" [weight=3]
+"COBOL-85" -> "COBOL 2002" [weight=3]
+"sh" -> "Perl"
+"nawk" -> "Perl"
+"sed" -> "Perl"
+"Algol 60" -> "Algol 68" [weight=3]
+"Java 2" -> "Nice"
+"OCaml" -> "Nice"
+"CLOS" -> "Nice"
+"Pascal" -> "Pascal AFNOR" [weight=3]
+"C++ (ARM)" -> "Oak"
+"Fortran IV" -> "Basic"
+"JOSS" -> "Basic"
+"Quick Basic" -> "Visual Basic" [weight=3]
+"Mumps" -> "Standard Mumps" [weight=3]
+"CSP" -> "occam" [weight=3]
+"JavaScript ES2015" -> "JavaScript ES2106" [weight=3]
+"Perl 4" -> "Lua"
+"Pascal AFNOR" -> "Lua"
+"Python" -> "Python 1.5.2" [weight=3]
+"ML" -> "Hope"
+"Smalltalk" -> "Smalltalk 72" [weight=3]
+"Algol 60" -> "PL/I"
+"Fortran IV" -> "PL/I"
+"COBOL" -> "PL/I"
+"ksh" -> "ksh88" [weight=3]
+"C" -> "csh"
+"sh" -> "csh"
+"bash" -> "bash 2.0" [weight=3]
+"C 95" -> "Limbo"
+"CSP" -> "Limbo"
+"Java" -> "Limbo"
+"Common Lisp" -> "Erlang"
+"Prolog" -> "Erlang"
+"Smalltalk 72" -> "Smalltalk 74" [weight=3]
+"Sather 0.1" -> "Sather 1.0" [weight=3]
+"Cyclone" -> "Cyclone 1.0" [weight=3]
+"CPL" -> "BCPL" [weight=3]
+"occam" -> "Ease" [weight=3]
+"Ruby" -> "Ruby 1.8" [weight=3]
+"sh" -> "bash"
+"csh" -> "bash"
+"ksh" -> "bash"
+"Oak" -> "Java" [weight=3]
+"Algol 68" -> "C"
+"B" -> "C" [weight=3]
+"CLU" -> "C++ (ARM)"
+"C++" -> "C++ (ARM)" [weight=3]
+"Ada 83" -> "C++ (ARM)"
+"Fortran I" -> "Algol 58"
+"Scheme R5RS" -> "Scheme R6RS" [weight=3]
+"Prolog" -> "Prolog ISO" [weight=3]
+"Groovy" -> "Groovy 1" [weight=3]
+"Smalltalk 80" -> "F-Script"
+"APL" -> "F-Script"
+"Algol 58" -> "JOSS"
+"C" -> "awk"
+"Snobol4" -> "awk"
+"SEQUEL" -> "SEQUEL/2" [weight=3]
+"Haskell 98" -> "CAL (Open Quark)"
+"Java 2" -> "CAL (Open Quark)"
+"Icon" -> "Unicon" [weight=3]
+"Tcl" -> "Tcl 8.1" [weight=3]
+"Ada" -> "Ada 83" [weight=3]
+"Java 5" -> "Java 6" [weight=3]
+"J++" -> "J++ 6.0" [weight=3]
+"bash 2.0" -> "bash 3.0" [weight=3]
+"Java" -> "JavaScript"
+"Self" -> "JavaScript"
+"Java" -> "J++"
+"Basic" -> "Quick Basic" [weight=3]
+"C++ (ARM)" -> "Dylan"
+"CLOS" -> "Dylan"
+"Smalltalk 80" -> "Dylan"
+"Simula 67" -> "Beta"
+"Eiffel 2" -> "Eiffel 3" [weight=3]
+"Perl" -> "Perl 4" [weight=3]
+"Life" -> "Oz 1"
+"APL 2" -> "A+"
+"Prolog" -> "CLIPS"
+"Scheme R4RS" -> "Scheme R5RS" [weight=3]
+"Oberon-2" -> "Zonnon"
+".NET" -> "Zonnon"
+"Forth" -> "PostScript"
+"C" -> "Go"
+"APL 96" -> "Go"
+"Pascal" -> "Go"
+"occam" -> "Go"
+"Python 2.0" -> "Go"
+"Oberon-2" -> "Go"
+"Modula-3" -> "Go"
+"Limbo" -> "Go"
+"Smalltalk 80" -> "Go"
+"CSP" -> "Go"
+"Python 2.5" -> "Python 3.0" [weight=3]
+"J++ 6.0" -> "J#"
+".NET" -> "J#"
+"S" -> "R" [weight=3]
+"Common Lisp" -> "R"
+"Scheme" -> "R"
+".NET" -> "Boo"
+"Python" -> "Boo"
+"C# 2.0" -> "C# 3.0" [weight=3]
+"Modula" -> "Modula-2" [weight=3]
+"Caml" -> "OCaml" [weight=3]
+"Java" -> "Java 2" [weight=3]
+"OCaml" -> "OCaml 3.0" [weight=3]
+"SASL" -> "Miranda"
+"Hope" -> "Miranda"
+"ML" -> "Miranda"
+"KRC" -> "Miranda"
+"Algol 60" -> "Simula I"
+"Eiffel 2" -> "Sather 0.1"
+"Snobol" -> "Snobol4" [weight=3]
+"ANSI SQL" -> "ISO SQL" [weight=3]
+"Modula-2" -> "Oberon"
+"COBOL" -> "COBOL-68" [weight=3]
+"SML" -> "Lean"
+"Simula I" -> "Simula 67" [weight=3]
+"SASL" -> "KRC" [weight=3]
+"Scala" -> "Fortress 1.0beta"
+"Fortran 2003" -> "Fortress 1.0beta"
+"FP" -> "FL" [weight=3]
+"APL 2" -> "APL 96" [weight=3]
+"SQL-92" -> "Quilt"
+"Perl 4" -> "Perl 5" [weight=3]
+"awk" -> "nawk" [weight=3]
+"Python 2.4" -> "Python 2.5" [weight=3]
+"Fortran I" -> "Fortran II" [weight=3]
+
+}
