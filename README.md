@@ -24,10 +24,24 @@
 
 ## This would be enough but ....
 
-# Create svg version
+## Create svg version
 
     dot -Tsvg diagram.dot -o diagram.svg
 
-# For ease I have added this html to our markup
+## For ease I have added this html to our markup
 
 ![](./diagram.svg?raw=true)
+
+### NOTE: you can search an svg with cmd-f
+
+# Example: cmd-f `Rust`
+
+You will find 1 instance
+
+# example: cmd-f `bash`
+
+You will find 3 instances
+
+This makes it easier to find any language in the graph as there are several nodes
+
+Hope you've enjoyed!
