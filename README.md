@@ -1,4 +1,4 @@
-# `graphviz` show a directed graph or tree
+### `graphviz` show a directed graph of many programming languages
 
 ## Install required software
 
@@ -12,7 +12,7 @@
 
     dot -Tpng -O diagram.dot
 
-## rename as just .png
+## Rename as just .png
 
     mv diagram.dot.png diagram.png
 
