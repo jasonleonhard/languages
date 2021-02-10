@@ -28,7 +28,7 @@
 
     dot -Tsvg diagram.dot -o diagram.svg
 
-## For ease I have added this html to our markup
+## For ease I have added this svg to our markup
 
 ![](./diagram.svg?raw=true)
 
