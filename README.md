@@ -19,9 +19,9 @@
 <p>
     <a href="https://www.pleasegrab.com">
         <img src="https://drive.google.com/viewerng/
-    viewer?embedded=true&url=https://github.com/jasonleonhard/languages/blob/master/diagram.dot.png" alt="https://github.com/jasonleonhard/languages/blob/master/diagram.dot.png" height="70%" width="70%">
+    viewer?embedded=true&url=https://github.com/jasonleonhard/languages/blob/master/diagram.dot.png?raw=true" alt="https://github.com/jasonleonhard/languages/blob/master/diagram.dot.png?raw=true" height="100%" width="100%">
     </a>
 </p>
 
 <embed src="https://drive.google.com/viewerng/
-    viewer?embedded=true&url=https://github.com/jasonleonhard/languages/blob/master/diagram.dot.png" width="500" height="375">
+    viewer?embedded=true&url=https://github.com/jasonleonhard/languages/blob/master/diagram.dot.png?raw=true" height="100%" width="100%">
